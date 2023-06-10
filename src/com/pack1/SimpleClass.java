@@ -28,6 +28,9 @@ public class SimpleClass{
 			
 			l.stream().findAny().orElseGet(() -> "Hi..Java" );
 			
+			List<Integer> list = List.of(41,63,12,78);
+			
+			list.stream().filter((v) -> v>50 ).forEach(n -> System.out.println(n+" "));			
 			
 		}
 	}
